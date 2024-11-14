@@ -1,7 +1,7 @@
  # Parte tres de el tpe
 Creamos una sitio de peliculas donde el usuario podra visualizar,crear,eliminar y editar peliculas mediante endpoints.
-La paginacion de el sitio solo esta diseñado para poder visualizar las peliculas y agregar una categoria/pelicula.
- 
+La paginacion de el sitio solo esta diseñado para poder visualizar las peliculas, agregar una categoria/pelicula y hacer order by.
+Creamos otra db parecida porque prefrimos dejar la de el otro trabajo aparte.
  # ENDPOINTS
 GET /peliculas = Obtiene todas las películas.
    
