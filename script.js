@@ -10,10 +10,10 @@ let formCategorias = document.querySelector("#formCategorias");
 formCategorias.addEventListener("submit", postCategoria);
 
 let sort = "";
-// Evento para escuchar los cambios en el select
+// escuchar cambios en el select
 document.getElementById("sortby").addEventListener("change", (e) => {
-  sort = e.target.value; // Actualiza el valor de sort con lo que seleccionó el usuario
-  getAll(); // Llama a la función getAll para cargar las películas con el nuevo parámetro
+  sort = e.target.value; // toma el option de el select
+  getAll(); // 
 });
 
 async function getAll() {
@@ -38,7 +38,6 @@ async function getAll() {
 }
 
 async function postPeli(e) {
-  
   e.preventDefault();
 
   let data = new FormData(formPelis);
@@ -65,7 +64,6 @@ async function postPeli(e) {
     console.log(error);
   }
 }
-
 
 async function postCategoria(e) {
   e.preventDefault();
