@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.6)), url(https://lightbox-prod.imgix.net/images/assets/BANNER_WIDE_mac_11702590_2F2DC41B-3CCD-4579-B3A36BAA0D14BCFA.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: orange;
+
+}
+
+.catStyle {
+    color: black;
+}
+
+.catStyle:hover {
+    color: orange !important;
+}
+.linkTitle{
+    font-size: 22px;
+    color: white;
+}
+.linkTitle:hover{
+    color: orange !important ;
+}
+.item-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkCard {
+    text-decoration: none;
+    color: white;
+}
+
+.linkCard:hover {
+    color: orange;
+    transition: ease-in 0.2s;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: orange;
+    transition: ease-in 0.2s;
+}
+
+.card-title {
+    color: white;
+}
+
+.selectCat {
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+}
+
+#option {
+    color: black;
+    background-color: orange;
+}
+.card{
+   
+    border-bottom-color: white;
+    border-radius: 0;
+    
+}
+.parrafo{
+    margin-top: 1em;
+    color: white;
+    text-align: center;
+}
+.caseEliminar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.selectStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
