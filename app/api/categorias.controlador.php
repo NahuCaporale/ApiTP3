@@ -34,7 +34,7 @@ class categoriasControlador
     }
 
 
-    //obtiene la peli de el modelo y su respectiva categoria  y las muestra
+    //obtiene la cat de el modelo y las muestra
     public function get($req)
     {
         // Verifica si hay un id
@@ -42,12 +42,12 @@ class categoriasControlador
             return $this->vista->response("no hay Categoria con ese id", 404);
         }
         $id = $req->params->id;
-        // Lógica para obtener peli por número
-        $peli = $this->modeloCat->getCategoria($id);
-        if (!$peli) {
+        // Lógica para obtener categoria por número
+        $cat = $this->modeloCat->getCategoria($id);
+        if (!$cat) {
             return $this->vista->response("No hay una Categoria con ese id", 404);
         }
-        return $this->vista->response($peli);
+        return $this->vista->response($cat);
     }
     public function delete($req, $res)
     {
@@ -56,8 +56,8 @@ class categoriasControlador
             return $this->vista->response("no hay Categoria con ese id", 404);
         }
         $id = $req->params->id;
-        $peli = $this->modeloCat->getCategoria($id);
-        if (!$peli) {
+        $categoria = $this->modeloCat->getCategoria($id);
+        if (!$categoria) {
             return $this->vista->response("No existe el id", 404);
         }
         $this->modeloCat->delete($id);

@@ -13,7 +13,7 @@ let sort = "";
 // escuchar cambios en el select
 document.getElementById("sortby").addEventListener("change", (e) => {
   sort = e.target.value; // toma el option de el select
-  getAll(); // 
+  getAll(); //
 });
 
 async function getAll() {
@@ -134,7 +134,7 @@ function showPeliculas() {
                     </h5>
                     <h5 class="card-title">Cat:
                         <a class="catStyle text-decoration-none text-reset">
-                            ${peli.categoriaNombre}  <!-- Usamos categoriaNombre que ahora está en peli -->
+                            ${peli.categoriaNombre} <!--trae el nombre dela categoria correcta!->
                         </a>
                     </h5>
                 </div>
