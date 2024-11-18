@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-11-2024 a las 18:06:27
+-- Tiempo de generación: 18-11-2024 a las 03:16:57
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -39,8 +39,8 @@ CREATE TABLE `categorias` (
 
 INSERT INTO `categorias` (`id`, `nombre`, `descripcion`) VALUES
 (2, 'Romance', ''),
-(3, 'UWU', 'holi'),
-(9, 'SCIFI', '');
+(9, 'SCIFI', ''),
+(12, 'Suspenso', '');
 
 -- --------------------------------------------------------
 
@@ -61,9 +61,9 @@ CREATE TABLE `peliculas` (
 
 INSERT INTO `peliculas` (`id`, `titulo`, `categoria_id`, `imagen`) VALUES
 (1, 'Paris,Texas', 2, 'https://i.pinimg.com/564x/df/48/3f/df483f17a6862d58b883e6bef3ea1d66.jpg'),
-(3, 'Laroy Texas', 3, 'https://a.ltrbxd.com/resized/film-poster/9/0/2/4/7/1/902471-laroy-texas-0-2000-0-3000-crop.jpg?v=7e326b9e39'),
-(5, 'Holi', 3, 'https://i.pinimg.com/474x/c8/c0/f4/c8c0f4e54f655968da3f563a6a5c840b.jpg'),
-(6, 'Nueve reinas', 3, 'https://i.pinimg.com/originals/5a/99/5b/5a995bc5485e8dd316f43b306f813509.jpg');
+(7, 'Never look away', 2, 'https://m.media-amazon.com/images/M/MV5BNDQ0MTc0NjctZjA5Mi00MDMwLTkzZTUtYTc3YjFkZDdjMmI3XkEyXkFqcGc@._V1_.jpg'),
+(9, 'Laroy, Texas', 12, 'https://a.ltrbxd.com/resized/film-poster/9/0/2/4/7/1/902471-laroy-texas-0-2000-0-3000-crop.jpg?v=7e326b9e39'),
+(10, 'Eyes Wide Shut', 12, 'https://i.pinimg.com/474x/c8/c0/f4/c8c0f4e54f655968da3f563a6a5c840b.jpg');
 
 --
 -- Índices para tablas volcadas
@@ -90,13 +90,13 @@ ALTER TABLE `peliculas`
 -- AUTO_INCREMENT de la tabla `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restricciones para tablas volcadas
