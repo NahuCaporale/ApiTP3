@@ -3,6 +3,8 @@ Creamos una sitio de peliculas donde el usuario podra visualizar,crear,eliminar 
 La paginacion de el sitio solo esta diseñado para poder visualizar las peliculas, agregar una categoria/pelicula y hacer order by.
 Creamos otra db parecida porque prefrimos dejar la de el otro trabajo aparte(no implementamos deploy asi que hay que importarla).
  # ENDPOINTS
+BASE_URL/API para acceder a los siguientes endpoints:
+
 GET /peliculas = Obtiene todas las películas.
    
 GET /peliculas/:id = Obtiene una película por su ID.
